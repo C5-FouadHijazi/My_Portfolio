@@ -49,15 +49,32 @@
   </header>
 
   <!-- Introduction -->
+
+  <div class="animation-area">
+		<ul class="box-area">
+			<li></li>
+			<li></li>
+			<li></li>
+			<li></li>
+			<li></li>
+			<li></li>
+		</ul>
+	
   <section class="intro" id="home">
     <h1 class="section__title section__title--intro">
       Hi, I am <strong>Fouad Hijazi</strong>
     </h1>
-    <p class="section__subtitle section__subtitle--intro">
-      full-stack web developer
-    </p>
+    <div class="wrapper">
+      <div class="static-txt">        </div>
+      <ul class="dynamic-txts">
+        <li><span>Full Stack</span></li>
+        <li><span>Web</span></li>
+        <li><span>Developer</span></li>
+          </ul>
+    </div>
     <img src="img/Fouad.jpg" alt="a picture of me" class="intro__img" />
   </section>
+</div>
 
   <!-- My services -->
   <section class="my-services" id="services">
@@ -206,6 +223,18 @@
   </footer>
 
   <script src="index.js"></script>
+  <div class="cursor"></div>
+  <div class="cursor2"></div>
+
+  <script>
+    var cursor = document.querySelector(".cursor");
+    var cursor2 = document.querySelector(".cursor2");
+    document.addEventListener("mousemove",function(e){
+      cursor.style.cssText = cursor2.style.cssText = "left: " + e.clientX + "px; top: " + e.clientY + "px;";
+    });
+  </script>
+
+ 
 
 </body>
 
